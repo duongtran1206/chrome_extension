@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Vote Logs</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 360px; padding: 10px; }
+    button { margin: 6px 4px; padding: 8px 12px; }
+    pre { white-space: pre-wrap; max-height: 300px; overflow: auto; background:#f7f7f7; padding:8px; }
+  </style>
+</head>
+<body>
+  <h3>Vote Logs</h3>
+  <div>
+    <button id="download">Download Logs</button>
+    <button id="clear">Clear Logs</button>
+  </div>
+  <div><small>Latest entries:</small></div>
+  <pre id="logArea">Loading...</pre>
+  <div id="status" style="margin-top:8px;color:#333"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
