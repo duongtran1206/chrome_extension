@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Vote Automation Extension",
+  "version": "1.0",
+  "permissions": [
+    "scripting",
+    "storage",
+    "tabs",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://embed-1113282.secondstreetapp.com/*",
+    "https://www.bestofbk.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ]
+}
